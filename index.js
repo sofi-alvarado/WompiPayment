@@ -1,8 +1,8 @@
 const { generateToken, generateEnlacePago, checkAplicativo, checkEnlacePago, disableEnlacePago } = require('./request/request')
 const EnlacePagoObject = require('./request/EnlacePago')
 
-const APIID = "27e4abd4-fd51-4ff7-87e8-169ba7b254b6"
-const SECRET = "828b548a-d68d-49c9-894c-f533157b63c3"
+const APIID = " "
+const SECRET = " "
 
 const testToken = async () => {
     const token = await generateToken(APIID, SECRET)
@@ -16,9 +16,9 @@ const testToken = async () => {
     //URL en donde el cliente sera redirigido si el pago es exitoso
     EnlacePagoObject.asignUrlRedirect('https://www.instagram.com/mores.sss/')
     //Email del negocio a notificar si la compra fue exitosa
-    EnlacePagoObject.configuracion.emailsNotificacion = "sofiaalvaradohenriquez@gmail.com"
+    EnlacePagoObject.configuracion.emailsNotificacion = " "
     //Numero de telefono sin guiones, solo se aceptan numeros de El Salvador
-    EnlacePagoObject.configuracion.telefonosNotificacion = "76391821"
+    EnlacePagoObject.configuracion.telefonosNotificacion = " "
 
     //const pagaLink = await generateEnlacePago(EnlacePagoObject.getObject(), token)
     //console.log(pagaLink)
